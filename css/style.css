@@ -1,0 +1,225 @@
+/* Navbar Section */
+html{
+    scroll-behavior: smooth;
+  }
+body{
+    font-family: "Raleway";
+}
+.navbar{
+    background-color: #f8f8f8;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+.nav-link,
+.navbar-brand{
+    color: #777777;
+    font-family: "Raleway";
+}
+/* Hero Section */
+.hero{
+    height: 90vh;
+    background:linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../images/banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.intro{
+    height: inherit;
+}
+.intro > div :nth-child(2){
+    font-size: 3.5em;
+    color: #f8f8f8;;
+}
+.intro > div :nth-child(3),
+.intro > div :nth-child(1){
+    font-size: 16px;
+}
+.intro > div > a > button{
+    background-color: #f8f8f8;;
+    color: #777777;
+    border: none;
+}
+/* About Section */
+.about{
+    background: #f8f8f8;
+    border-bottom: 1px solid #7a204838;
+}
+.about_left,
+.about_md{
+    border-right: 1px solid #7a204838;
+    color: #777777;
+}
+.about_left :nth-child(1),
+.about_md :nth-child(1),
+.about_right :nth-child(1){
+    font-size: 1.75rem;
+    color: #777777;
+}
+.about_left :nth-child(2){
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+.about_left :nth-child(3){
+    font-size: .8rem;
+}
+.about_left :nth-child(4){
+    background-color: transparent;
+    color: #7a2048;
+    border: 1px solid #7a2048
+}
+.about_md p{
+    font-size: .9rem;
+}
+.about_md :nth-child(5) > a > i{
+    font-size: 18px;
+}
+.about_md :nth-child(5) > a{
+    text-decoration: none;
+}
+.social-link{
+    color: #7a2048;
+    margin: 5px;
+}
+.ux-div :nth-child(2) > h2,
+.web-div :nth-child(2) > h2,
+.gr-div :nth-child(2) > h2{
+    font-size: 1.25rem;
+}
+.ux-div :nth-child(2) > p,
+.web-div :nth-child(2) > p,
+.gr-div :nth-child(2) > p{
+    font-size: .9rem;
+}
+/* Resume Section */
+.work{
+    border: 1px solid #7a204838;
+    color: #777777;
+}
+.h_txt{
+    font-size: 1.75rem;
+    color: #777777;
+}
+.work :nth-child(1),
+.edu :nth-child(1),
+.skill :nth-child(1){
+    font-size: 1.25rem;
+}
+.work :nth-child(2) > h3,
+.work :nth-child(2) > h4,
+.edu :nth-child(2) > h3,
+.edu :nth-child(2) > h4,
+.edu :nth-child(3) > h3,
+.edu :nth-child(3) > h4
+{
+    font-size: 1rem;
+}
+.work :nth-child(2) > small,
+.work :nth-child(4) > small{
+    font-size: .9rem;
+    opacity: .8;
+}
+.work :nth-child(4) > h3,
+.work :nth-child(4) > h4{
+    font-size: 1rem;
+}
+.edu,
+.skill{
+    border: 1px solid #7a204838;
+    color: #777777;
+}
+.skill :nth-child(2) > h3,
+.skill :nth-child(3) > h3,
+.skill :nth-child(4) > h3,
+.skill :nth-child(5) > h3,
+.skill :nth-child(6) > h3,
+.skill :nth-child(7) > h3{
+    font-size: .9rem;
+}
+.progress{
+    background: #777777;
+}
+.card-body{
+    height: 100px;
+    background-color: #777777;
+}
+.card-body > button{
+    background: #f8f8f8;
+    border: none;
+}
+.card-body > button > a{
+    color: #7a2048;
+    text-decoration: none;
+}
+#avai{
+    color: #777777;
+}
+.hire{
+    height: auto;
+    padding: 50px 0;
+    background: #f8f8f8;
+}
+.hire :nth-child(1){
+    font-size: 2rem;
+}
+.hire :nth-child(2){
+    background-color: #777777;
+    border: none;
+    min-width: 150px;
+}
+#hire_me{
+    font-size: .9rem;
+    color: #fff;
+    text-decoration: none;
+}
+#d_me{
+    font-size: .9rem;
+    color: #777777;
+    text-decoration: none;
+}
+.contact_form :nth-child(1),
+.contact_info :nth-child(1){
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #777777;
+}
+.contact_btn > button{
+    background: #777777;
+}
+.contact_info :nth-child(5) > a > i{
+    font-size: 18px;
+}
+.contact_info :nth-child(5) > a{
+    text-decoration: none;
+}
+footer{
+    background-color: #777777;
+    color: #f8f8f8;
+    padding: 10px 0;
+}
+@media (max-width:768px){
+    .about_left,
+    .about_md{
+    border-right: none;
+}
+}
+@media (max-width:600px){
+    .intro > div :nth-child(2){
+        font-size: 2.8em;
+    }
+    .hero{
+        height: 50vh;
+    }
+    .about,
+    #resume{
+        padding: 0 5%;
+    }
+    .about_md,
+    .about_right{
+        margin-top: 20px;
+    }
+    .skill{
+        padding-bottom: 30px;
+    }
+}
